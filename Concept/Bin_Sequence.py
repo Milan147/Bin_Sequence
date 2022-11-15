@@ -57,7 +57,7 @@ while True:
 
     blurred = cv2.GaussianBlur(frame, (11, 11), 0)
     hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
-    #for each color in dictionary check object in frame
+    # for each color in dictionary check object in frame
     for key, value in upper.items():
         # construct a mask for the color from dictionary`1, then perform
         # a series of dilations and erosions to remove any small
